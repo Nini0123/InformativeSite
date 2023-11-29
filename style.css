@@ -1,0 +1,226 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;    
+}
+.main-nav{
+    width: 100%;
+    position: fixed;
+    background-color: rgb(0, 0, 0);
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 10px 0 6px black;
+}
+.main-nav img{
+    width:180px;
+    margin: 40px;
+    margin-left: 20px;   
+}
+.main-nav img:hover{
+    cursor: pointer;
+}
+.main-nav .nav-elements{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px;
+    margin-left: -300px;
+    margin-bottom: 45px;
+}
+.main-nav .nav-elements li{
+    font-size: 14px;
+    font-weight: 500;
+    margin: 15px;
+    padding: 3px;
+    padding-bottom: 4px;
+    padding-top: 2px;
+    color: white;
+}
+.main-nav .nav-elements li:hover{
+    cursor: pointer;
+    color: rgb(221, 221, 221);
+
+}
+.main-nav p{
+    margin: 40px;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+.main-nav p:hover{
+    background-color: rgb(197, 196, 196);
+    color: black;
+}
+
+.main-nav .nav-elements a{
+    text-decoration: none;
+}
+.landing{
+    width: 100%;
+    height: 90vh;
+    background-image: url(/img1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 5s;
+
+    animation-name: animate;
+    animation-direction:alternate-reverse ;
+    animation-duration: 50s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+}
+@keyframes animate{
+    0%{
+        background-image: url(/img1.jpg);
+    }
+    25%{
+        background-image: url(/img2.jpg);
+    }
+    50%{
+        background-image: url(/img3.jpg);
+    }
+    75%{
+        background-image: url(/img4.jpg);
+    }
+    100%{
+        background-image: url(/img5.jpg);
+    }
+}
+.landing .content
+{
+    text-align: left;
+    padding-top: 250px;
+    padding-left: 50px;
+    color: white;
+}
+.landing .content p{
+    border: 2px solid white;
+    width: fit-content;
+    border-radius: 30px;
+    padding: 10px;
+    display: inline;
+}
+.landing .content p:hover{
+    transition: 0.5s;
+    cursor: pointer;
+    background: linear-gradient(#ffffff66,#80808080);
+}
+/* .landing .content .fa-solid{
+    margin: 3px;
+    
+} */
+.login{
+    background-color: rgb(10, 10, 10);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+}
+.login .login-para{
+    margin: 40px;
+    font-size: 24px;
+    color: white;
+}
+.login a{
+    text-decoration: none;
+}
+.login a p{
+    margin: 40px;
+    color: white;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-weight: 500;
+}
+.login a p:hover{
+    transition: 0.5s;
+    background-color: rgb(197, 196, 196);
+    color: black;
+    font-weight: 500;
+}
+
+.space-mission{
+    width: 100%;
+    height: 92vh;
+    background-color: rgb(15, 15, 15);
+}
+.space-mission .space-body{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ height: 100vh;
+ width: 100%;
+ background-color: black;
+}
+
+/* .space-mission h1{
+    padding:20px;
+    color: white;
+    text-align: center;
+} */
+.box-container{
+    margin-left: -1200px;
+    width:100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: -100px;
+}
+
+.box-container .box{
+    width: 230px;
+    height: 230px;
+    margin: 30px;
+    color: black;
+    background-color: white;
+}
+.box{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0px 0px 5px 1px rgb(107, 106, 106);
+    border-radius: 4px;
+
+}
+.box:hover{
+    cursor: pointer;
+    transition-delay: 3s;
+    transition-duration: 5s;
+    transform: scale(110%);
+}
+.section1{
+    background-image: url(/voya.png);
+    }
+.section2{
+    background-image: url(/voya.png);
+    }
+.section3{
+    background-image: url(/voya.png);
+    }
+.section4{
+    background-image: url(/voya.png);
+    }
+.section5{
+    background-image: url(/voya.png);
+    }
+.section6{
+    background-image: url(/voya.png);
+    }
+.section7{
+    background-image: url(/voya.png);
+    }
+.section8{
+    background-image: url(/voya.png);
+    }
